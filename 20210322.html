@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="jp">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>GitHub Pagesについて</title>
+    
+    <link rel="stylesheet" href="main.css">
+</head>
+
+
+<body>
+    <!--ホームに帰るためのボタン-->
+    <logotohome>
+    <a href="index.html"><img src="images/logo.png" alt=""></a>
+    </logotohome>
+
+    <!--h1は見出し１（大見出し）-->
+    <h1>今日のまとめ　gitの使い方</h1>
+        <!--h2は見出し2（中見出し）-->
+        <h2>■gitログインに必要なモノ</h2>
+            <!--h3は見出し3（小見出し）-->
+            <h3>GitHubのアカウント</h3>
+
+               後藤颯汰のホームページアドレス<br>
+               https://soutagoto.github.io/doyolab/
+               <br><br>
+               
+               32648e6361ba62286763ee99d44e6d1ec7a17742<br>
+パーソナルアクセストークン
+<br
+
+
+
+                
+               
+                。<br><br>
+                <!--部分的に黒バックにする。cssにプロパティは記述-->
+                <span class="blackback">
+                   
+                </span>
+                
+            </p>
+
+            <h3>gitをインストール</h3>
+                <p>
+                    MACのターミナルで下記のコマンドを入力しEnterを押し、gitをインストールします。<br>
+                    <span class="blackback">
+                        brew install git
+                    </span>
+                </p>
+            <h3>フォルダの作成</h3>
+                    <p>
+                    ホームディレクトリにmygitというフォルダを作る。<br>
+                    ターミナルを立ち上げて下記のコマンドを入力するとフォルダが作成されます。
+                    <br><br>(make directoryの略です)
+                    <span class="blackback">
+                        mkdir mygit
+                    </span>
+                </p>
+
+        <h2>■GitHubの設定</h2>
+            <h3>リポジトリーの作成</h3>
+            <p>
+                githubの右上にある+マークをクリックし、New Repositoryをクリックし、新しいリポジトリーを作ります。<br>
+                <img src="images/20190611/createrepo.png" width="30%">
+            </p>
+            <p>
+                下記の画像を参考にdoyolabというリポジトリーを作成します。<br>
+                <img src="images/20190611/step1.png" width="80%">
+            </p>
+            <p>
+                リポジトリーのSettingsから下記の設定をします。<br>
+                <img src="images/20190611/step1-1.png" width="80%">
+            </p>
+
+        <h2>■リポジトリーのクローン</h2>
+        <br>
+        クローンの意味はクローンの意味はリポジトリを複製する。
+            <h3>gitのURLをコピー</h3>
+            <p>
+                githubのdoyolabというリポジトリーの中で下記のボタンを押し、リポジトリーのURLをコピーします。
+                <img src="images/20190611/step2.png" width="80%">
+            </p>
+            <h3>mygitに移動</h3>
+            <p>
+                ターミナルを開いて、下記のコマンドでmygitフォルダに移動します。cdはchange directoryの略です<br>
+                <span class="blackback">
+                    cd mygit
+                </span>
+            </p>
+            <h3>自分のPCにリポジトリをクローンする</h3>
+            <p>
+                
+                ターミナルで下記のコマンドを入力し、クローンを作成してください。(URLは上でコピーしたURLです。)<br>
+                <span class="blackback">
+                    git clone リポジトリのURL
+                </span>
+            </p>
+            <h3>確認方法</h3>
+            <p>mygitの中にdoyolabというフォルダができて、doyolabフォルダの中にREADME.mdファイルが入っていれば成功です。
+    
+        <h2>■運用</h2>
+            <h3>ファイルを追加、変更したら</h3>
+            <p>
+                htmlファイルを作って、doyolabフォルダに入れ、下記の手順でgithubへアップロードできます。<br>
+                <span class="blackback">
+                    cd mygit/doyolab
+                </span>(doyolabフォルダに移動するだけなので、既に移動済みの場合はいらない)
+                <br>
+                <span class="blackback">
+                    git add .
+                </span>
+                <br>
+                <span class="blackback">
+                    git commit -m"メッセージ"
+                <br>更新ごとにメッセージを変更し、更新をわかりやすくする
+                </span>
+                <br>
+                <span class="blackback">
+                    git push
+                </span>
+            </p>
+                
+
+</body>
