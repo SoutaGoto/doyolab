@@ -24,17 +24,18 @@
 
                後藤颯汰のホームページアドレス<br>
                https://soutagoto.github.io/doyolab/
-               <br><br>
-               
-               32648e6361ba62286763ee99d44e6d1ec7a17742<br>
+               <br>
+<br>
+
+               ・32648e6361ba62286763ee99d44e6d1ec7a17742<br>
 パーソナルアクセストークン
-<br
+<br>
 
 
 
                 
                
-                。<br><br>
+                <br><br>
                 <!--部分的に黒バックにする。cssにプロパティは記述-->
                 <span class="blackback">
                    
@@ -42,13 +43,29 @@
                 
             </p>
 
+            <h3>gitの確認をする</h3>
+            
+        
+    <p>ターミナルを開いて、
+            <span class="blackback">
+            "git --version"  
+            </span>
+
+            </span>で自分のMACにgitが入っているか確認する
+            <br>
+            <br>
+
+            インストールできていなかった場合、gitをインストールする。インストール方法は下記参照
+        
             <h3>gitをインストール</h3>
-                <p>
-                    MACのターミナルで下記のコマンドを入力しEnterを押し、gitをインストールします。<br>
+            </p>
+    
+        <p>MACのターミナルで下記のコマンドを入力しEnterを押し、gitをインストールする。<br>
                     <span class="blackback">
                         brew install git
                     </span>
-                </p>
+                
+            
             <h3>フォルダの作成</h3>
                     <p>
                     ホームディレクトリにmygitというフォルダを作る。<br>
@@ -60,13 +77,27 @@
                 </p>
 
         <h2>■GitHubの設定</h2>
+
+          <p>初期設定として以下三つの項目を行う<h2><font color="red">以下の三つを行う</font></h2></p>
+        <p>
+        git int  <br>
+        git config --global user.email "メールアドレス”<br>
+        git config --global user.name "SoutaGoto"<br>
+        <br>
+        以上三つの項目を実行する
+
+    
+        <br>
+        </p>
             <h3>リポジトリーの作成</h3>
             <p>
-                githubの右上にある+マークをクリックし、New Repositoryをクリックし、新しいリポジトリーを作ります。<br>
+                githubの右上にある+マークをクリックし、New Repositoryをクリックし、新しいリポジトリーを作る
+        。<br>
                 <img src="images/20190611/createrepo.png" width="30%">
             </p>
             <p>
-                下記の画像を参考にdoyolabというリポジトリーを作成します。<br>
+                下記の画像を参考にsinagara
+                doyolabというリポジトリーを作成する。<br>
                 <img src="images/20190611/step1.png" width="80%">
             </p>
             <p>
@@ -74,17 +105,34 @@
                 <img src="images/20190611/step1-1.png" width="80%">
             </p>
 
-        <h2>■リポジトリーのクローン</h2>
+        
         <br>
-        クローンの意味はクローンの意味はリポジトリを複製する。
+        <h3><font color="red">アクセストークンの作成</font><h3>
+1.mygitの右上のマイページからセッティングを選択<br>
+2.項目からdiveropper Settingを選択<br>
+3.Personal access tokensを選択<br>
+4.トークンを取得<br>
+
+        <br>
+
+        
+
+<br
+
+
+<br>
+<h2>■リポジトリーのクローン</h2>
+
+       
+        <h3><font color="red">クローンの意味はクローンの意味はリポジトリを複製</font><h3></h3>
             <h3>gitのURLをコピー</h3>
             <p>
-                githubのdoyolabというリポジトリーの中で下記のボタンを押し、リポジトリーのURLをコピーします。
+                githubのdoyolabというリポジトリーの中で下記の<font color="green">緑</font></h2>,のボタンを押し、リポジトリーのURLをコピーします。
                 <img src="images/20190611/step2.png" width="80%">
             </p>
             <h3>mygitに移動</h3>
             <p>
-                ターミナルを開いて、下記のコマンドでmygitフォルダに移動します。cdはchange directoryの略です<br>
+                ターミナルを開いて、下記のコマンドでmygitフォルダに移動します。ch2><font color="red">dはchange directoryの略です</font></h2><br>
                 <span class="blackback">
                     cd mygit
                 </span>
@@ -103,23 +151,41 @@
         <h2>■運用</h2>
             <h3>ファイルを追加、変更したら</h3>
             <p>
-                htmlファイルを作って、doyolabフォルダに入れ、下記の手順でgithubへアップロードできます。<br>
+                htmlファイルを作って、doyolabフォルダに入れ、下記の手順でgithubへアップロード<br>
                 <span class="blackback">
                     cd mygit/doyolab
-                </span>(doyolabフォルダに移動するだけなので、既に移動済みの場合はいらない)
+                </span>(doyolabフォルダに移動するだけなので、既に移動済みの場合はいらない)<br>
+                確認の方法はターミナルを開いた時にユーザーネームの後ろにdoyolabがついているか否か
                 <br>
                 <span class="blackback">
                     git add .
                 </span>
                 <br>
                 <span class="blackback">
-                    git commit -m"メッセージ"
-                <br>更新ごとにメッセージを変更し、更新をわかりやすくする
+                    git commit -m"メッセージ" 
+                <br><!DOCTYPE html>
+                <html lang="en">
+                <head>
+                    <meta charset="UTF-8">
+                    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <title>Document</title>
+                </head>
+                <body>
+                    
+                </body>
+                
                 </span>
                 <br>
                 <span class="blackback">
                     git push
+                    <br>
+                
                 </span>
+                FiNISH
+<br>
+
+<h3><font color="red">ここでの注意点は、メッセージの部分を必ず更新ごとに変更する</font><h3>
             </p>
                 
 
